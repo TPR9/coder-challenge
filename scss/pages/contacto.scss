@@ -1,0 +1,47 @@
+.main-contact {
+    ::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: .05;    
+        background: url(/imagen/escrito.jpg);
+        background-size: cover;
+        z-index: -1;
+    }
+    
+.formu {
+
+    text-align: center;
+    margin: 10rem;
+    }
+
+    label {
+        color: white;
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        color: white;
+    }
+
+    button {
+        padding: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .formu {
+        flex-wrap: wrap;
+        margin: 0;
+        ::after {
+            background: none;
+        }
+    }
+
+    .formulario {
+        margin: 2rem;
+    }
+}

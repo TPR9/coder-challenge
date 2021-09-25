@@ -1,0 +1,193 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'STIX Two Math', serif;
+  background-color: black; }
+
+a {
+  color: white; }
+
+.title {
+  font-size: 30px;
+  color: white; }
+
+.content {
+  background-color: darkgray;
+  padding: 60px;
+  font-size: 24px;
+  font-family: fantasy; }
+
+h1, h2 {
+  margin: auto;
+  text-align: center;
+  margin-bottom: 4rem; }
+
+h3 {
+  margin-bottom: 3rem; }
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid white;
+  flex-wrap: wrap; }
+  header img {
+    width: 200px;
+    padding-left: 1rem; }
+  header nav {
+    width: 70%; }
+    header nav ul {
+      flex-wrap: wrap;
+      display: flex;
+      justify-content: space-evenly;
+      gap: 2rem; }
+      header nav ul li {
+        font-size: 2rem;
+        list-style: none; }
+
+@media screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 3rem; }
+    header img {
+      padding-left: 0; }
+    header nav {
+      text-align: center;
+      width: 100%; }
+      header nav ul {
+        flex-direction: column;
+        justify-content: center;
+        margin: 0; } }
+
+.container {
+  text-align: center;
+  margin-top: 2rem; }
+  .container ::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .2;
+    background: url(../imagen/estudiojuridico.jpg);
+    background-size: cover;
+    z-index: -1; }
+  .container__title {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 1rem; }
+  .container__banner img {
+    width: 800px; }
+  .container__txt {
+    margin: auto;
+    width: 1500px;
+    margin-top: 1rem;
+    color: white;
+    font-size: 2rem; }
+
+.contact {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 3rem 0; }
+  .contact__lista {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-self: center; }
+    .contact__lista ul li {
+      color: grey;
+      list-style: none;
+      font-size: 1.5rem; }
+  .contact__mapa {
+    border-left: 1px dotted white; }
+  .contact iframe {
+    margin-left: 10rem; }
+
+@media screen and (max-width: 650px) {
+  .container h2 {
+    font-size: 1.5rem; }
+  .container__banner img {
+    width: 350px; }
+  .container__txt {
+    width: 350px; }
+    .container__txt p {
+      font-size: 1rem; }
+  .contact {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    flex-direction: column;
+    border-top: 1px solid white; }
+    .contact__lista {
+      margin-bottom: 1rem; }
+      .contact__lista ul li {
+        font-size: 1.2rem; }
+    .contact__mapa {
+      text-align: center; }
+    .contact iframe {
+      margin-left: 0;
+      width: 350px; } }
+
+footer ul {
+  margin: 2rem;
+  display: flex;
+  justify-content: space-evenly; }
+  footer ul li {
+    color: grey;
+    list-style: none; }
+
+.footer {
+  border-top: 1px solid white; }
+
+.footer__lista--margin {
+  margin: 0;
+  padding-top: 1.5rem; }
+
+@media screen and (max-width: 500px) {
+  footer ul {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem; } }
+
+.main-contact ::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .05;
+  background: url(/imagen/escrito.jpg);
+  background-size: cover;
+  z-index: -1; }
+
+.main-contact .formu {
+  text-align: center;
+  margin: 10rem; }
+
+.main-contact label {
+  color: white;
+  font-size: 1.5rem; }
+
+.main-contact h1 {
+  color: white; }
+
+.main-contact button {
+  padding: 0.5rem; }
+
+@media screen and (max-width: 600px) {
+  .formu {
+    flex-wrap: wrap;
+    margin: 0; }
+    .formu ::after {
+      background: none; }
+  .formulario {
+    margin: 2rem; } }
