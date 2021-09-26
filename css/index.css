@@ -19,8 +19,7 @@ a {
 .content {
   background-color: darkgray;
   padding: 60px;
-  font-size: 24px;
-  font-family: fantasy; }
+  font-size: 24px; }
 
 h1, h2 {
   margin: auto;
@@ -126,7 +125,8 @@ header {
     flex-direction: column;
     border-top: 1px solid white; }
     .contact__lista {
-      margin-bottom: 1rem; }
+      margin-bottom: 1rem;
+      color: black; }
       .contact__lista ul li {
         font-size: 1.2rem; }
     .contact__mapa {
